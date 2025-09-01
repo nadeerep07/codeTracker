@@ -29,6 +29,16 @@ export function datesMonToSatContaining(d: Date) {
   })
 }
 
+export function addDays(base: Date, days: number) {
+  const d = new Date(base)
+  d.setDate(d.getDate() + days)
+  return d
+}
+
+export function nextDayKey(from: Date = new Date()) {
+  return formatDateKey(addDays(from, 1))
+}
+
 export function isMonToSat(d: Date) {
   const day = d.getDay()
   return day >= 1 && day <= 6

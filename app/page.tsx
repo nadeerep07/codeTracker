@@ -7,7 +7,7 @@ export default function Page() {
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-semibold text-pretty">LeetTrack</h1>
           <p className="text-gray-600 mt-1">
-            Track daily LeetCode, leaves, bonus, and fines. Student and Admin modules.
+            Track daily LeetCode.
           </p>
         </div>
         <AuthForm />

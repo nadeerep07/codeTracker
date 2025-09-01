@@ -27,8 +27,9 @@ export interface LeaveRequest {
   reason?: string
   status: "pending" | "approved" | "rejected"
   requestedAt: number
+  kind?: "regular" | "skip-next-day"
+  skipNextDay?: boolean
 }
-
 export interface BonusLeave {
   id?: string
   uid: string
